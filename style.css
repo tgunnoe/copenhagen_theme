@@ -425,27 +425,80 @@ ul {
 
 /***** Header *****/
 .header {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 5%;
+  max-width: 1200px;
+  margin: 0 auto 25px auto;
+  padding-top: 20px;
   position: relative;
-  align-items: center;
-  display: flex;
-  height: 71px;
-  justify-content: space-between;
+  border-bottom-color: #f0f0f0;
+}
+@media (min-width: 575px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-@media (min-width: 1160px) {
-  .header {
-    padding: 0;
-    width: 90%;
-  }
+.gg-phone-num {
+    font-size: 14px;
+    text-align: center;
+}
+@media (min-width: 575px){
+    .gg-phone-num {
+        position:absolute;
+        top: 30px;
+        left: 55px;
+        font-size: 14px;
+}
+}
+@media (min-width: 768px) {
+.gg-phone-num {
+    font-size: 18px;
+}
+}
+
+.logo {
+    display:block;
+    margin: 0 auto;
+    width: 235px;
+}
+@media (min-width: 768px) {
+    .logo {
+        display: flex;
+        width: auto;
+    }
+}
+.logo a {
+    float: left;
+}
+@media (min-width: 768px) {
+    .logo a {
+        float: none;
+    }
 }
 
 .logo img {
-  max-height: 37px;
+    max-height: 60px;
+    margin:0 10px;
+    display:block;
 }
-
+.site-name {
+    color: $brand_color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 30px;
+    display: inline-block;
+}
+@media (min-width: 768px) {
+    .site-name {
+        line-height:60px;
+    }
+}
+.nav-wrapper {
+    position: absolute;
+    right: 0;
+}
 .user-nav {
   display: inline-block;
   position: absolute;

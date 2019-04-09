@@ -1,4 +1,7 @@
 {
+  "custom_group_label": "Custom",
+  "phone_number_description": "Phone number to display at the top",
+  "phone_number_label": "Phone number",
   "colors_group_label": "Colors",
   "brand_color_description": "Brand color for major navigational elements",
   "brand_color_label": "Brand color",

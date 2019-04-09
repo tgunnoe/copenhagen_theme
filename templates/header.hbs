@@ -1,8 +1,17 @@
 <header class="header">
   <div class="logo">
+    <div class="site-name">
+      {{settings.site_name1}}
+    </div>
     {{#link 'help_center'}}
       <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
     {{/link}}
+    <div class="site-name">
+      {{settings.site_name2}}
+    </div>
+  </div>
+  <div class="gg-phone-num">
+    {{settings.phone_number}}
   </div>
   <div class="nav-wrapper">
     <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}"></span>
