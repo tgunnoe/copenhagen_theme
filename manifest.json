@@ -6,7 +6,20 @@
   "default_locale": "en-us",
     "settings": [{
     "label": "custom_group_label",
-    "variables": []
+        "variables": [{
+            "identifier": "main_site_link",
+            "type": "text",
+            "description": "main_site_link_description",
+            "label": "main_site_link_label",
+            "value": "https://ghostgunner.net"
+        }, {
+            "identifier": "main_site_link_text",
+            "type": "text",
+            "description": "main_site_link_text_description",
+            "label": "main_site_link_text_label",
+            "value": "Back to site"
+        }
+      ]
     }, {
     "label": "colors_group_label",
     "variables": [{
@@ -87,9 +100,10 @@
         { "label": "Helvetica Neue", "value": "'Helvetica Neue', Arial, Helvetica, sans-serif" },
         { "label": "Impact", "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" },
         { "label": "Lucida Grande", "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif" },
+        { "label": "Open Sans", "value": "'Open Sans', sans-serif" },
         { "label": "Trebuchet MS", "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" }
       ],
-      "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+      "value": "'Open Sans', sans-serif"
     }]
   }, {
     "label": "brand_group_label",

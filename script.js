@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleElement.setAttribute('aria-expanded', !isExpanded);
   }
 
-  var burgerMenu = document.querySelector('.header .icon-menu');
+  var burgerMenu = document.querySelector('header .icon-menu');
   var userMenu = document.querySelector('#user-nav');
 
   burgerMenu.addEventListener('click', function(e) {

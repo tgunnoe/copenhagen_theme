@@ -1,5 +1,9 @@
 {
   "custom_group_label": "Custom",
+  "main_site_link_label": "Back hyperlink",
+  "main_site_link_description": "Hyperlink to main site for exiting support.",
+  "main_site_link_text_label": "Hyperlink label",
+  "main_site_link_text_description": "Label for above hyperlink",
   "phone_number_description": "Phone number to display at the top",
   "phone_number_label": "Phone number",
   "colors_group_label": "Colors",
