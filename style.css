@@ -693,6 +693,9 @@ header {
     padding: 1.168em 1em;
     color: black;
 }
+.user-nav[aria-expanded="true"] ul li a {
+    color: $link_color
+}
 
 
 /***** Footer *****/
