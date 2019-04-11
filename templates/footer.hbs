@@ -1,6 +1,19 @@
 <footer class="footer">
   <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="{{settings.main_site_link}}">{{settings.main_site_link_text}}</a></li>
+        <li>{{#link 'help_center'}}Support{{/link}}</li>
+        <li>{{link 'community'}}</li>
+        <li>{{link 'new_request' class='submit-a-request'}}</li>
+      </ul>
+    </nav>
+
+    <div class="footer-disclaimer">
+      <p>
+        PLEASE NOTE: Ghost Gunner machines, lowers, frames, and other hardware and equipment are not currently available to persons outside the United States and they are not available to residents of and persons in the State of New Jersey, which criminalizes possession of unregistered assault weapons. THIS PRODUCT IS ILLEGAL IN THE STATE OF NEW JERSEY. THE PURCHASE OF “GHOST GUNS” OR “GHOST GUN” PARTS FOR ASSEMBLY IS UNLAWFUL IN NEW JERSEY. THIS EMAIL IS NOT INTENDED AND SHOULD NOT BE CONSTRUED AS AN ADVERTISEMENT OR OFFER FOR SALE OF “GHOST GUNS” AND “GHOST GUN” PARTS TO NEW JERSEY RESIDENTS OR ANY PERSON IN NEW JERSEY.
+      </p>
+    </div>
 
     <div class="footer-language-selector">
       {{#if alternative_locales}}
@@ -17,6 +30,7 @@
           </span>
         </div>
       {{/if}}
+      {{#link 'help_center'}}{{help_center.name}}{{/link}}
     </div>
   </div>
 </footer>

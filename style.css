@@ -163,9 +163,9 @@ ul {
 
 /***** Buttons *****/
 .button, [role="button"] {
-  border: 1px solid $brand_color;
-  border-radius: 4px;
-  color: $brand_color;
+  border: 1px solid black;
+  border-radius: 0;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 0.875em;
@@ -178,6 +178,7 @@ ul {
   white-space: nowrap;
   width: 100%;
   -webkit-touch-callout: none;
+  background-color: black;
 }
 
 @media (min-width: 768px) {
@@ -194,6 +195,7 @@ ul {
   background-color: $brand_color;
   color: $brand_text_color;
   text-decoration: none;
+  border-color: $brand_color;
 }
 
 .button[aria-selected="true"]:hover, .button[aria-selected="true"]:focus, .button[aria-selected="true"]:active, [role="button"][aria-selected="true"]:hover, [role="button"][aria-selected="true"]:focus, [role="button"][aria-selected="true"]:active {
@@ -208,7 +210,7 @@ ul {
 .button-large, input[type="submit"] {
   background-color: $brand_color;
   border: 0;
-  border-radius: 4px;
+  border-radius: 0;
   color: $brand_text_color;
   font-size: 14px;
   font-weight: 400;
@@ -225,7 +227,7 @@ ul {
 }
 
 .button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  background-color: darken($brand_color, 20%);
+    background-color: black;
 }
 
 .button-large[disabled], input[type="submit"][disabled] {
@@ -606,6 +608,7 @@ header {
   min-width: 0;
   padding: 0;
   white-space: nowrap;
+  background: transparent;
 }
 
 .user-info > [role="button"]:hover, .user-info > [role="button"]:focus {
@@ -674,7 +677,7 @@ header {
 }
 
 /*** Primary Nav ***/
-.user-nav ul {
+.user-nav ul, .footer-nav ul {
     list-style: none;
     text-align: center;
 }
@@ -706,7 +709,7 @@ header {
 .footer {
   border-top: 1px solid #ddd;
   margin-top: 60px;
-  padding: 30px 0;
+  padding: 30px 0 90px 0;
 }
 
 .footer a {
@@ -714,24 +717,42 @@ header {
 }
 
 .footer-inner {
-  max-width: 1160px;
+  max-width: 930px;
   margin: 0 auto;
   padding: 0 5%;
-  display: flex;
-  justify-content: space-between;
+  display: block;
 }
 
 @media (min-width: 1160px) {
   .footer-inner {
     padding: 0;
-    width: 90%;
   }
 }
-
+.footer-nav {
+    margin: 10px 0;
+}
+.footer-nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer-nav a {
+    color: $brand_color;
+    text-decoration: underline;
+}
+.footer-nav a:hover {
+    text-decoration: none;
+}
+.footer-disclaimer {
+    text-align: center;
+}
+.footer-disclaimer p {
+    color: rgb(109, 109, 109);
+}
 .footer-language-selector {
   color: lighten($text_color, 20%);
-  display: inline-block;
+  display: block;
   font-weight: 300;
+  text-align: center;
 }
 
 /***** Breadcrumbs *****/
@@ -788,7 +809,7 @@ header {
 }
 
 .search input[type="search"]:focus {
-  border: 1px solid $brand_color;
+  border: 1px solid black;
   color: #555;
 }
 
@@ -1382,6 +1403,7 @@ header {
   flex-shrink: 0;
   /*Avoid collapsing elements in Safari (https://github.com/philipwalton/flexbugs#1-minimum-content-sizing-of-flex-items-not-honored)*/
   width: 100%;
+
 }
 
 @media (min-width: 768px) {
@@ -1540,9 +1562,9 @@ header {
 }
 
 .article-vote {
-  background: transparent;
-  border: 1px solid $brand_color;
-  color: $brand_color;
+  background: black;
+  border: 1px solid black;
+  color: white;
   margin: 10px 5px;
   min-width: 90px;
   width: auto;
@@ -1564,12 +1586,13 @@ header {
 }
 
 .article-vote:focus, .article-vote:active {
-  background-color: transparent;
+  background-color: black;
   color: $brand_color;
 }
 
 .article-vote:hover {
-  background-color: $brand_color;
+    background-color: $brand_color;
+    border-color: $brand_color;
 }
 
 .article-vote:hover::before, .article-vote:hover::after, .article-vote[aria-selected="true"]::before, .article-vote[aria-selected="true"]::after {
@@ -1635,7 +1658,7 @@ header {
 }
 
 .sidenav-item {
-  border-radius: 4px;
+  border-radius: 0;
   color: $text_color;
   display: block;
   font-weight: 300;
@@ -2185,7 +2208,8 @@ header {
 }
 
 .community-follow [role="button"]:hover {
-  background-color: $brand_color;
+    background-color: $brand_color;
+    border-color: $brand_color;
 }
 
 .community-follow [role="button"]:hover::after, .community-follow [role="button"]:focus::after {
@@ -2209,9 +2233,9 @@ header {
 }
 
 .community-follow [role="button"]::after {
-  border-left: 1px solid $brand_color;
+  border-left: 1px solid white;
   content: attr(data-follower-count);
-  color: $brand_color;
+  color: white;
   display: inline-block;
   font-family: $heading_font;
   margin-left: 15px;
