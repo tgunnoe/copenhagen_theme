@@ -1,7 +1,7 @@
 {
-  "name": "copenhagen_theme",
+  "name": "zendesk_gg_theme",
   "version": "1.0.0",
-  "repository": "git@github.com:zendesk/copenhagen_theme.git",
+  "repository": "git@github.com:tgunnoe/zendesk-gg-theme.git",
   "dependencies": {
     "node-fetch": "^2.1.2"
   },

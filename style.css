@@ -501,7 +501,8 @@ header {
 }
 .nav-wrapper {
     position: absolute;
-    right: 0;
+    right: 35px;
+    top: 30px;
 }
 .user-nav {
   white-space: nowrap;
@@ -613,7 +614,7 @@ header {
 }
 
 .user-info > [role="button"]::after {
-  color: $link_color;
+  color: black;
   padding-right: 15px;
 }
 
@@ -695,6 +696,9 @@ header {
 }
 .user-nav[aria-expanded="true"] ul li a {
     color: $link_color
+}
+.user-nav a.site-back::before {
+    content: "\2190";
 }
 
 

@@ -12,6 +12,7 @@
       </div>
     </div>
     <div class="gg-phone-num">
+      <i class="fa fa-phone" aria-hidden="true"></i>
       {{settings.phone_number}}
     </div>
     <div class="nav-wrapper">
@@ -24,7 +25,7 @@
     </div>
     <nav class="user-nav" id="user-nav">
       <ul>
-        <li><a href="{{settings.main_site_link}}">{{settings.main_site_link_text}}</a></li>
+        <li><a class="site-back" href="{{settings.main_site_link}}">{{settings.main_site_link_text}}</a></li>
         <li>{{#link 'help_center'}}Support Home{{/link}}</li>
         <li>{{link 'community'}}</li>
         <li>{{link 'new_request' class='submit-a-request'}}</li>
