@@ -18,7 +18,25 @@
             "description": "main_site_link_text_description",
             "label": "main_site_link_text_label",
             "value": "Back to site"
-        }
+        }, {
+      "identifier": "site_name1",
+      "type": "text",
+      "description": "site_name1_description",
+      "label": "site_name1_label",
+      "value": "Ghost"
+    }, {
+      "identifier": "site_name2",
+      "type": "text",
+      "description": "site_name2_description",
+      "label": "site_name2_label",
+      "value": "Gunner"
+    }, {
+      "identifier": "phone_number",
+      "type": "text",
+      "description": "phone_number_description",
+      "label": "phone_number_label",
+      "value": "800-555-5555"
+    }
       ]
     }, {
     "label": "colors_group_label",
@@ -117,24 +135,6 @@
       "type": "file",
       "description": "favicon_description",
       "label": "favicon_label"
-    }, {
-      "identifier": "site_name1",
-      "type": "text",
-      "description": "site_name1_description",
-      "label": "site_name1_label",
-      "value": "Ghost"
-    }, {
-      "identifier": "site_name2",
-      "type": "text",
-      "description": "site_name2_description",
-      "label": "site_name2_label",
-      "value": "Gunner"
-    }, {
-      "identifier": "phone_number",
-      "type": "text",
-      "description": "phone_number_description",
-      "label": "phone_number_label",
-      "value": "800-555-5555"
     }]
   }, {
     "label": "images_group_label",
