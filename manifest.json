@@ -1,7 +1,7 @@
 {
   "name": "GG Theme",
   "author": "tgunnoe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "api_version": 1,
   "default_locale": "en-us",
     "settings": [{
@@ -36,12 +36,6 @@
             "description": "site_name2_description",
             "label": "site_name2_label",
             "value": "Gunner"
-        }, {
-            "identifier": "phone_number",
-            "type": "text",
-            "description": "phone_number_description",
-            "label": "phone_number_label",
-            "value": "800-555-5555"
         }, {
             "identifier": "phone_number",
             "type": "text",
