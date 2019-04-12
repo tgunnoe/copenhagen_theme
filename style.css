@@ -429,11 +429,14 @@ ul {
 header {
     max-width: 1160px;
     margin: 0 auto;
+    padding: 20px 0;
 }
 .header {
-  padding-top: 20px;
   position: relative;
   border-bottom-color: #f0f0f0;
+}
+.header a.site-back {
+    margin: 0 auto;
 }
 @media (min-width: 575px) {
     .header {
@@ -450,7 +453,7 @@ header {
 @media (min-width: 575px){
     .gg-phone-num {
         position:absolute;
-        top: 30px;
+        top: 10px;
         left: 55px;
         font-size: 14px;
         margin-top:0;
@@ -486,6 +489,7 @@ header {
     max-height: 60px;
     margin:0 10px;
     display:block;
+    float: left;
 }
 .site-name {
     color: $brand_color;
@@ -504,7 +508,7 @@ header {
 .nav-wrapper {
     position: absolute;
     right: 35px;
-    top: 30px;
+    top: 10px;
 }
 .user-nav {
   white-space: nowrap;
@@ -831,19 +835,21 @@ header {
 }
 
 .search-full input[type="search"] {
-    border: 1px solid #000;
+    border: 1px solid #bbb;
     background: rgba(255,255,255,0.7);
-    height: 80px;
+    height: 60px;
     color: black;
     border-radius: 0;
-    font-size: 26px;
+    font-size: 20px;
+    padding-left: 60px;
+}
+.search-full::before {
+    left: 25px;
 }
 
 /***** Hero component *****/
 .hero {
-  background-image: url($homepage_background_image);
-  background-position: center;
-  background-size: cover;
+  background-color: #fafafa;
   height: 300px;
   padding: 0 20px;
   text-align: center;
@@ -954,7 +960,7 @@ header {
 }
 
 .blocks-item {
-  border: 1px solid black;
+  border: 1px solid #bbb;
   border-radius: 0;
   box-sizing: border-box;
   color: $brand_color;
