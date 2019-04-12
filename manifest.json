@@ -1,7 +1,7 @@
 {
   "name": "GG Theme",
   "author": "tgunnoe",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "api_version": 1,
   "default_locale": "en-us",
     "settings": [{
@@ -13,17 +13,17 @@
             "label": "main_site_link_label",
             "value": "https://ghostgunner.net"
         }, {
-            "identifier": "main_site_link_text",
-            "type": "text",
-            "description": "main_site_link_text_description",
-            "label": "main_site_link_text_label",
-            "value": "Back to site"
-        }, {
             "identifier": "help_center_name",
             "type": "text",
             "description": "help_center_name_description",
             "label": "help_center_name_label",
             "value": "Support Center"
+        }, {
+            "identifier": "help_center_subtitle",
+            "type": "text",
+            "description": "help_center_subtitle_description",
+            "label": "help_center_subtitle_label",
+            "value": "Looking for answers? You've come to the right place."
         }, {
             "identifier": "site_name1",
             "type": "text",
