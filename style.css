@@ -965,7 +965,7 @@ header {
 }
 
 .blocks-item {
-  border: 1px solid #bbb;
+  border: 1px solid #ddd;
   border-radius: 0;
   box-sizing: border-box;
   color: $brand_color;
