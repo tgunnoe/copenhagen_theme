@@ -11,10 +11,24 @@
     <section class="categories blocks">
       <ul class="blocks-list">
         {{#each categories}}
-
             {{#each sections}}
               <li class="blocks-item">
                 <a href='{{url}}' class="blocks-item-link">
+                  {{#is name 'State Laws'}}<i class="material-icons">gavel</i>{{/is}}
+                  {{#is name 'Federal Laws'}}<i class="material-icons">account_balance</i>{{/is}}
+                  {{#is name 'Parts Resources'}}<i class="material-icons">developer_board</i>{{/is}}
+                  {{#is name '80% Lower and Frame Code and Compatibility FAQ'}}<i class="material-icons">code</i>{{/is}}
+                  {{#is name 'New User FAQs'}}<i class="material-icons">how_to_reg</i>{{/is}}
+                  {{#is name 'Installing Software or Firmware'}}<i class="material-icons">save</i>{{/is}}
+                  {{#is name 'Software and Firmware'}}<i class="material-icons">dvr</i>{{/is}}
+                  {{#is name 'General Milling Operation FAQs'}}<i class="material-icons">extension</i>{{/is}}
+                  {{#is name 'Pistol Milling Operation FAQs'}}<i class="material-icons">device_unknown</i>{{/is}}
+                  {{#is name 'AR-15 and AR-308 Milling Operation FAQs'}}<i class="material-icons">open_in_browser</i>{{/is}}
+                  {{#is name 'Error Messages, Codes, and Alarms'}}<i class="material-icons">error</i>{{/is}}
+                  {{#is name 'Calibration and Factory Reset'}}<i class="material-icons">refresh</i>{{/is}}
+                  {{#is name 'User Serviceable Repairs'}}<i class="material-icons">build</i>{{/is}}
+                  {{#is name 'GG1 and GG2 (With V1 Spindle) Upgrades'}}<i class="material-icons">store</i>{{/is}}
+                  {{#is name 'Ordering and Policies'}}<i class="material-icons">payment</i>{{/is}}
                   <h4 class="blocks-item-title">
                     {{name}}
                   </h4>
@@ -22,7 +36,6 @@
                 </a>
               </li>
             {{/each}}
-
         {{/each}}
       </ul>
       {{pagination}}

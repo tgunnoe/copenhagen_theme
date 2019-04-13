@@ -978,7 +978,11 @@ header {
   text-align: center;
   background-color: #fafafa;
 }
-
+.blocks-item .material-icons {
+    font-size: 80px;
+    color: #777;
+    margin: 30px;
+}
 @media (min-width: 768px) {
   .blocks-item {
     margin: 0 15px 30px;
@@ -1021,7 +1025,8 @@ header {
 }
 
 .blocks-item-title {
-  margin-bottom: 0;
+    margin-bottom: 0;
+    color: #777;
 }
 
 .blocks-item-description {
@@ -3430,6 +3435,7 @@ header {
 }
 
 /***** Icons *****/
+
 [class^="icon-"]::before,
 [class*=" icon-"]::before,
 .icon,
