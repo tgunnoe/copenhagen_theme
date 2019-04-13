@@ -838,13 +838,14 @@ header {
 }
 
 .search-full input[type="search"] {
-    border: 1px solid #bbb;
+    border: 1px solid #fafafa;
     background: rgba(255,255,255,0.7);
     height: 60px;
     color: black;
     border-radius: 0;
     font-size: 20px;
     padding-left: 60px;
+    box-shadow: 5px 10px 15px #ccc;
 }
 .search-full::before {
     left: 25px;
