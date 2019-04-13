@@ -979,7 +979,7 @@ header {
   margin: 0 0 30px;
   max-width: 100%;
   text-align: center;
-  background-color: #fafafa;
+  background-color: transparent;
 }
 .blocks-item .material-icons {
     font-size: 80px;
