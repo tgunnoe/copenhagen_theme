@@ -188,7 +188,7 @@ ul {
 }
 
 .button::after, [role="button"]::after {
-  color: $brand_color;
+  color: white;
 }
 
 .button:hover, .button:active, .button:focus, .button[aria-selected="true"], [role="button"]:hover, [role="button"]:active, [role="button"]:focus, [role="button"][aria-selected="true"] {
@@ -437,6 +437,9 @@ header {
 }
 .header a.site-back {
     margin: 0 auto;
+}
+.header a.site-back:hover {
+    text-decoration: none;
 }
 @media (min-width: 575px) {
     .header {
