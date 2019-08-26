@@ -14,18 +14,18 @@
           {{#if ../has_multiple_categories}}
           <li class="blocks-item">
             <a href='{{url}}' class="blocks-item-link">
+              {{#is name 'Legal FAQs'}}<i class="material-icons">gavel</i>{{/is}}
+              {{#is name "80% Lowers, Frames, and Parts FAQ's"}}<i class="material-icons">account_balance</i>{{/is}}
+              {{#is name 'Technical Support FAQs'}}<i class="material-icons">developer_board</i>{{/is}}
+              {{#is name 'All Other FAQs'}}<i class="material-icons">code</i>{{/is}}
               <h4 class="blocks-item-title">{{name}}</h4>
-              <p class="blocks-item-description">{{excerpt description}}</p>
             </a>
           </li>
           {{else}}
             {{#each sections}}
               <li class="blocks-item">
                 <a href='{{url}}' class="blocks-item-link">
-                  {{#is name 'State Laws'}}<i class="material-icons">gavel</i>{{/is}}
-                  {{#is name 'Federal Laws'}}<i class="material-icons">account_balance</i>{{/is}}
-                  {{#is name 'Parts Resources'}}<i class="material-icons">developer_board</i>{{/is}}
-                  {{#is name '80% Lower and Frame Code and Compatibility FAQ'}}<i class="material-icons">code</i>{{/is}}
+
                   {{#is name 'New User FAQs'}}<i class="material-icons">how_to_reg</i>{{/is}}
                   {{#is name 'Installing Software or Firmware'}}<i class="material-icons">save</i>{{/is}}
                   {{#is name 'Software and Firmware'}}<i class="material-icons">dvr</i>{{/is}}
